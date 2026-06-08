@@ -1,15 +1,6 @@
 ---
-<<<<<<< Updated upstream
 - hosts: all
   become: true
-  tasks:
-    - name: 测试 Playbook
-      debug:
-        msg: "Hello Semaphore!"
-=======
-- name: Semaphore 测试 Playbook
-  hosts: all
-  become: true   # 如果目标主机需要 sudo
   gather_facts: false
 
   tasks:
@@ -21,4 +12,3 @@
       file:
         path: /tmp/semaphore_test.txt
         state: touch
->>>>>>> Stashed changes
