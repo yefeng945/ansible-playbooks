@@ -1,7 +1,0 @@
----
-- hosts: all
-  become: true
-  tasks:
-    - name: 测试 Playbook
-      debug:
-        msg: "Hello Semaphore!"
